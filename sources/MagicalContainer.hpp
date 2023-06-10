@@ -94,7 +94,7 @@ namespace ariel {
                 return *this;
             }
             AscendingIterator operator++(){
-                if(current_index == *container->elements.end()){
+                if(current_index == container->size()){
                     throw std::runtime_error("vector ended");
                 }
                 ++current_index;
@@ -127,7 +127,7 @@ namespace ariel {
                 return *this;
             }
             SideCrossIterator operator++(){
-                if(current_index == *container->elements.end()){
+                if(current_index == container->size()){
                         throw std::runtime_error("vector ended");
                 }
                 ++current_index;
@@ -154,7 +154,7 @@ namespace ariel {
                 return *this;
             };
             PrimeIterator operator++(){
-                if(current_index == *container->elements.end()){
+                if(current_index == container->size()){
                         throw std::runtime_error("vector ended");
                 }
                 ++current_index;
